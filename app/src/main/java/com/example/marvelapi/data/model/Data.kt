@@ -5,5 +5,5 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class Data(
     val count : Int,
-    val results: Results
+    val results: List<Result>
 )

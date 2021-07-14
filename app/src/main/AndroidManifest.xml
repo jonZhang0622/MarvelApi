@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarvelApi"
         android:name=".MarvelApplication">
-        <activity android:name=".ui.view.activity.MainActivity">
+        <activity android:name=".ui.view.activity.MarvelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

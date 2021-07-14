@@ -1,10 +1,13 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'androidx.navigation.safeargs.kotlin'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
-    id 'androidx.navigation.safeargs.kotlin'
 }
+
+apply from: "$project.rootDir/constants.gradle"
+apply from: "$project.rootDir/apikeys.gradle"
 
 android {
     compileSdkVersion 30
@@ -18,6 +21,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField STRING, MARVEL_PUBLIC_API_FIELD, MARVEL_PUBLIC_API_KEY
+        buildConfigField STRING, MARVEL_PRIVATE_API_FIELD, MARVEL_PRIVATE_API_KEY
     }
 
     buildTypes {
@@ -69,8 +75,8 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
 
     // Hilt
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+    implementation "com.google.dagger:hilt-android:2.35"
+    kapt "com.google.dagger:hilt-compiler:2.35"
 
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")

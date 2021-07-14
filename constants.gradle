@@ -1,0 +1,8 @@
+ext {
+
+    // Public Api key
+    MARVEL_PUBLIC_API_FIELD = "MARVEL_PUBLIC_API_KEY"
+
+    // Private Api key
+    MARVEL_PRIVATE_API_FIELD = "MARVEL_PRIVATE_API_KEY"
+}

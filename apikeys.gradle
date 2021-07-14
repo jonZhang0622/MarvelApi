@@ -1,0 +1,8 @@
+ext {
+
+    // Public Api key
+    MARVEL_PUBLIC_API_KEY = "0a794818f71d3ee5486ff53624d2a1b6"
+
+    // Private Api key
+    MARVEL_PRIVATE_API_KEY = "b79c253166722f3b108900934e08ef16ea2224eb"
+}

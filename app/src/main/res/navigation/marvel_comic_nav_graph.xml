@@ -9,12 +9,12 @@
         android:id="@+id/marvel_comic_list_fragment"
         tools:layout="@layout/marvel_comic_fragment">
         <action
-            android:id="@+id/marvel_comic_list_fragment_to_marvel_comic_details_fragmemt"
+            android:id="@+id/marvel_comic_list_fragment_to_marvel_comic_details_fragment"
             app:destination="@id/marvel_comic_details_fragment" />
     </fragment>
 
     <fragment
         android:id="@+id/marvel_comic_details_fragment"
-        tools:layout="@layout/comic_details_fragment" />
+        tools:layout="@layout/marvel_comic_details_fragment" />
 
 </navigation>

@@ -18,7 +18,7 @@ class MarvelViewModel @Inject constructor(private val marvelRepo: MarvelRepo) : 
     val marvelResource get() = _marvelResource
 
     private var _selectedComic = MutableLiveData<Result>()
-    val selectedComic get() = _marvelResource
+    val selectedComic get() = _selectedComic
 
     init {
         getComics()

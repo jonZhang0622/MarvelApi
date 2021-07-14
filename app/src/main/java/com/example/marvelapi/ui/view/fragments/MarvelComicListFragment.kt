@@ -8,6 +8,8 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.example.marvelapi.R
 import com.example.marvelapi.data.model.Result
 import com.example.marvelapi.databinding.MarvelComicFragmentBinding
 import com.example.marvelapi.ui.view.adapters.ComicAdapter
@@ -61,6 +63,7 @@ class MarvelComicListFragment : Fragment() {
 
     private fun onComicSelected(result: Result) {
         marvelViewModel.setSelectedComic(result)
+        findNavController().navigate(R.id.marvel_comic_details_fragment)
     }
 
     override fun onDestroyView() {

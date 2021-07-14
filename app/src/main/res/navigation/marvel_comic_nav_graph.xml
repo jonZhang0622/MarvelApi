@@ -7,6 +7,7 @@
 
     <fragment
         android:id="@+id/marvel_comic_list_fragment"
+        android:name="com.example.marvelapi.ui.view.fragments.MarvelComicListFragment"
         tools:layout="@layout/marvel_comic_fragment">
         <action
             android:id="@+id/marvel_comic_list_fragment_to_marvel_comic_details_fragment"
@@ -15,6 +16,7 @@
 
     <fragment
         android:id="@+id/marvel_comic_details_fragment"
+        android:name="com.example.marvelapi.ui.view.fragments.MarvelComicDetailsFragment"
         tools:layout="@layout/marvel_comic_details_fragment" />
 
 </navigation>
